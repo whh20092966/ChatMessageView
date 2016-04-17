@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 sendMessage(message);
                 mEditTextMessage.setText("");
+                mListView.setSelection(mListView.getBottom());
             }
         });
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendMessage();
+                mListView.setSelection(mListView.getBottom());
             }
         });
 
